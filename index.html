@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carregando...</title>
+    <title>Verificando...</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/545/545682.png" type="image/png">
     <style>
         body {
             background-color: #0d1117;
@@ -14,13 +15,14 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
+            text-align: center;
         }
         .loader {
-            border: 6px solid #f3f3f3;
-            border-top: 6px solid #3498db;
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            border-top: 6px solid #00d8ff;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             animation: spin 1s linear infinite;
             margin-bottom: 20px;
         }
@@ -28,12 +30,19 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        h2 {
+            font-weight: 400;
+        }
     </style>
-    <meta http-equiv="refresh" content="2; URL='https://tpi.li/h1Sy'">
+    <script>
+        setTimeout(function(){
+            window.location.href = "https://tpi.li/h1Sy";
+        }, 2000); // 2 segundos
+    </script>
 </head>
 <body>
     <div class="loader"></div>
-    <h2>Carregando o conteúdo...</h2>
+    <h2>Verificando segurança do link...</h2>
     <p>Você será redirecionado em instantes.</p>
 </body>
 </html>
